@@ -43,21 +43,22 @@ Users can easily track shared expenses, see who owes who, and even settle paymen
 ## 📦 Project Structure
 
 /dividi/
-├── app/ # Main screens
-│ ├── index.tsx # Groups list (Home)
-│ ├── group/
-│ │ └── [id].tsx # Group details screen
-│ └── add-expense.tsx # Add expense form
-├── components/ # Reusable UI components
-│ ├── GroupCard.tsx
-│ ├── ExpenseItem.tsx
-│ └── AddExpenseModal.tsx
-├── assets/ # Images, icons, splash screens
-│ ├── icon.png
-│ ├── splash.png
-│ └── favicon.png
-├── app.config.js # Expo configuration
-└── package.json # Project dependencies
+
+- app/
+  - group/
+    - [id].tsx
+  - index.tsx
+  - add-expense.tsx
+- components/
+  - GroupCard.tsx
+  - ExpenseItem.tsx
+  - AddExpenseModal.tsx
+- assets/
+  - icon.png
+  - splash.png
+  - favicon.png
+- app.config.js
+- package.json
 
 ---
 
