@@ -1,65 +1,86 @@
-# Welcome to your Expo app 👋
+# 💰 Dividi
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple and modern **bill-splitting app** built with **Expo** and **React Native Web**, designed for friends and groups in **Portugal** 🇵🇹.  
+Users can easily track shared expenses, see who owes who, and even settle payments through **MB WAY**.
 
-## Get started
+---
 
-To start the app, in your terminal run:
+## ✨ Features
 
-```bash
-npm run start
-```
+- 🪄 **No account needed** — just your name and phone number
+- 👥 **Create or join groups** for trips, dinners, or shared houses
+- 💵 **Add expenses** and select who paid and who participated
+- 📊 **Automatic balance calculation** (who owes who)
+- 📱 Works as both a **mobile app** and **PWA (Progressive Web App)**
+- 💸 **MB WAY deep link support** _(coming soon)_
 
-In the output, you'll find options to open the app in:
+---
 
-- [a development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [an Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [an iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🧭 App Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Screen                 | Description                             |
+| ---------------------- | --------------------------------------- |
+| **Onboarding**         | User enters name and phone number       |
+| **Groups List (Home)** | Shows all groups and balances           |
+| **Create Group**       | Add a new group and invite friends      |
+| **Group Details**      | Tabs for Expenses, Summary, and Members |
+| **Add Expense**        | Add who paid and how it’s split         |
+| **Summary**            | See who owes who and simplify payments  |
 
-## Workflows
+---
 
-This project is configured to use [EAS Workflows](https://docs.expo.dev/eas/workflows/get-started/) to automate some development and release processes. These commands are set up in [`package.json`](./package.json) and can be run using NPM scripts in your terminal.
+## 🛠️ Tech Stack
 
-### Previews
+- [Expo](https://expo.dev) – Build once, run anywhere
+- [React Native](https://reactnative.dev) – UI components
+- [React Native Web](https://necolas.github.io/react-native-web/) – Web/PWA support
+- [Firebase (planned)](https://firebase.google.com) – Authentication & storage
+- [Tailwind CSS (optional)](https://tailwindcss.com) – Fast styling
+- [Vercel](https://vercel.com) – PWA hosting
 
-Run `npm run draft` to [publish a preview update](https://docs.expo.dev/eas/workflows/examples/publish-preview-update/) of your project, which can be viewed in Expo Go or in a development build.
+---
 
-### Development Builds
+## 📦 Project Structure
 
-Run `npm run development-builds` to [create a development build](https://docs.expo.dev/eas/workflows/examples/create-development-builds/). Note - you'll need to follow the [Prerequisites](https://docs.expo.dev/eas/workflows/examples/create-development-builds/#prerequisites) to ensure you have the correct emulator setup on your machine.
+/dividi/
+├── app/
+│ ├── index.tsx # Groups list (Home)
+│ ├── group/[id].tsx # Group details
+│ └── add-expense.tsx # Add expense form
+├── components/
+│ ├── GroupCard.tsx
+│ ├── ExpenseItem.tsx
+│ └── AddExpenseModal.tsx
+├── assets/
+│ ├── icon.png
+│ ├── splash.png
+│ └── favicon.png
+├── app.config.js
+└── package.json
 
-### Production Deployments
+---
 
-Run `npm run deploy` to [deploy to production](https://docs.expo.dev/eas/workflows/examples/deploy-to-production/). Note - you'll need to follow the [Prerequisites](https://docs.expo.dev/eas/workflows/examples/deploy-to-production/#prerequisites) to ensure you're set up to submit to the Apple and Google stores.
+## 💡 Future Plans
 
-## Hosting
+🔐 Firebase phone authentication
 
-Expo offers hosting for websites and API functions via EAS Hosting. See the [Getting Started](https://docs.expo.dev/eas/hosting/get-started/) guide to learn more.
+💸 MB WAY integration (via deep link)
 
+🔔 Notifications for new expenses
 
-## Get a fresh project
+📅 Group filters by month or event
 
-When you're ready, run:
+🌑 Dark mode
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🪪 License
 
-## Learn more
+This project is licensed under the MIT License — free to use and modify.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🧾 TL;DR
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> “Contas Divididas” makes splitting bills **simple, friendly, and fast** —  
+> No logins, no stress. Just add, split, and settle. 💶
