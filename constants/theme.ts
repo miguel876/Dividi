@@ -5,8 +5,10 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// Primary mint accent used across the app
+const tintColorLight = '#77CFB5';
+// Use the same mint accent for dark mode for consistency; adjust if you prefer a lighter variant
+const tintColorDark = '#77CFB5';
 
 export const Colors = {
   light: {
